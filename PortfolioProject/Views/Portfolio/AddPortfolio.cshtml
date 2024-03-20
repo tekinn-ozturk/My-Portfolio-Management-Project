@@ -1,0 +1,79 @@
+﻿@using EntityLayer.Concrete
+@model Portfolio
+@{
+    ViewData["Title"] = "AddPortfolio";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<style>
+   .middle{
+       display:block;
+       text-align:left;
+       margin-left:255px;
+   }
+
+   
+</style>
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body text-center">
+            <h4 class="card-title text-center">Deneyim Ekleme Sayfası</h4>
+            <form class="form-group" method="post">
+                <br />
+
+
+                <label class="middle">Proje Başlığı</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+                <br />
+                <label class="middle">Görsel-1</label>
+                <input class="form-control col-8 mx-auto" type="text" name="ImageUrl" />
+                <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                <br />
+                <label class="middle">Görsel-2</label>
+                <input class="form-control col-8 mx-auto" type="text" name="ImageUrl2" />
+                <span asp-validation-for="ImageUrl2" class="text-danger"></span>
+                <br />
+                <label class="middle">Proje Linki</label>
+                <input class="form-control col-8 mx-auto" type="text" name="ProjectUrl" />
+                <span asp-validation-for="ProjectUrl" class="text-danger"></span>
+               @*  <br />
+                <label>Fotoğraf-1</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Image1" />
+                <span asp-validation-for="Image1" class="text-danger"></span>
+                <br />
+                <label>Fotoğraf-2</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Image2" />
+                <span asp-validation-for="Image2" class="text-danger"></span>
+                <br />
+                <label>Fotoğraf-3</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Image3" />
+                <span asp-validation-for="Image3" class="text-danger"></span>
+                <br />
+                <label>Fotoğraf-4</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Image4" />
+                <span asp-validation-for="Image4" class="text-danger"></span> *@
+                <br />
+                <label class="middle">Platform</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Platform" />
+                <span asp-validation-for="Platform" class="text-danger"></span>
+                <br />
+                <label class="middle">Fiyat</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Price" placeholder="$XXXX USD" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+                <br />
+               @*  <label class="middle">Statü</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Status" />
+                <span asp-validation-for="Status" class="text-danger"></span>
+                <br /> *@
+                <label class="middle">Tamamlanma Oranı</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Value" />
+                <span asp-validation-for="Value" class="text-danger"></span>
+                <br />
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+

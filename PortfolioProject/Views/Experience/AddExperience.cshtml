@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewData["Title"] = "AddExperience";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title text-center">Deneyim Ekleme Sayfası</h4>
+            
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+                    <label for="exampleInputName1">Deneyim Başlığı</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Name" name="Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Tarih</label>
+                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="Date" name="Date">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Görsel Yolu</label>
+                    <input type="text" class="form-control" id="exampleInputPassword4" name="ImageUrl" placeholder="image path">
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleTextarea1">Açıklama</label>
+                    <textarea class="form-control" id="exampleTextarea1" rows="4" name="Description"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2">Kaydet</button>
+               
+            </form>
+        </div>
+    </div>
+</div>
+
+@* <div class="card-header border-0">
+    <h3 class="mb-0">Deneyim Ekleme Ekranı</h3>
+</div>
+<form class="form-group" method="post">
+    <br />
+
+
+    <label>Deneyim Başlığı</label>
+    <input class="form-control" type="text" name="Name" />
+    <br />
+    <label>Tarih</label>
+    <input class="form-control" type="text" name="Date" />
+    <br />
+    <label>Resim Yolu</label>
+    <input class="form-control" type="text" name="ImageUrl" />
+    <br />
+    <label>Açıklama</label>
+    <textarea class="form-control" name="Description"></textarea>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+</form> *@
+

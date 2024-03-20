@@ -1,0 +1,27 @@
+﻿@using EntityLayer.Concrete
+@model Skill
+@* add işlemi yaparken name attribute ile halledebildik ancak update'de @model yönergesi kullanmalıyız çünkü name attribute'i ilkel *@
+@{
+    ViewData["Title"] = "EditSkill";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Güncelleme Ekranı</h3>
+</div>
+<form class="form-group" asp-controller="Skill" asp-action="EditSkill" method="post" >
+    <br />
+
+    <input class="form-control" type="hidden" name="SkillId" asp-for="SkillId" />
+    <label>Yetenek Başlığı</label>
+    <input class="form-control" type="text" name="Title" asp-for="Title" />
+    <br />
+    <label>Değer</label>
+    <input class="form-control" type="text" name="Value" asp-for="Value" />
+    <br />
+    <button type="submit" class="btn btn-primary">Güncellemeyi Kaydet</button>
+
+
+</form>
+
+

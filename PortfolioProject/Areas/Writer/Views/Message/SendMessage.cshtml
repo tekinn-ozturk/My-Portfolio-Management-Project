@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model WriterMessage
+@{
+    ViewData["Title"] = "SendMessage";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<form class="form-group" method="post" >
+    <h3>Yeni Mesaj Oluştur</h3>
+    <br />
+
+    <div>
+
+
+        <label style=""><strong>Alıcı Email</strong></label>
+    </div>
+
+    <div>
+
+        <input type="text" asp-for="Receiver" class="form-control col-md-8" style="display:inline" />
+
+
+    </div>
+
+
+    <br />
+    
+    <div class="mb-3">
+        <label><strong>Başlık</strong></label>
+        <input type="text" asp-for="Subject" class="form-control col-md-8" />
+    </div>
+    <br />
+
+    <div class="mb-3">
+        <label><strong>İçerik</strong></label>
+        <textarea rows="10" asp-for="MessageContent" class="form-control col-md-8"></textarea>
+    </div>
+
+
+    <input type="hidden" asp-for="Id" class="form-control col-4" readonly style="display:inline" />
+
+    <button type="submit" class="btn btn-outline-primary" style="border-radius: 15px" >Gönder</button>
+
+</form>
+
+

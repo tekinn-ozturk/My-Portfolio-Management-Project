@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "AddService";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+  <style>
+    .middle {
+        display: block;
+        text-align: left;
+        margin-left: 255px;
+    }
+  </style>
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body text-center">
+            <h4 class="card-title text-center">Hizmet Ekleme Sayfası</h4>
+            <form class="form-group" method="post">
+                <br />
+
+
+                <label class="middle">Hizmet Başlığı</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Title" />
+                <br />
+                <label class="middle">Görsel</label>
+                <input class="form-control col-8 mx-auto" type="text" name="ImageUrl" />
+                <br />
+
+
+                <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+

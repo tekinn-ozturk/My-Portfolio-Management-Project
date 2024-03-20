@@ -1,0 +1,66 @@
+﻿@using PortfolioProject.Areas.Writer.Models
+@model UserEditVM
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Profil Bilgilerini Güncelle</h4>
+
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                @* resim dosyası post edebilmek için enctype="multipart/form-data" olması gerekiyor. *@
+                <div class="form-group">
+                    <label for="exampleInputName1">Ad</label>
+                    <input type="text" asp-for="Name" class="form-control" id="ad" placeholder="Ad">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Soyad</label>
+                    <input type="text" asp-for="Surname" class="form-control" id="soyad" placeholder="Soyad">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifre</label>
+                    <input type="password" asp-for="Password" class="form-control" id="sifre" placeholder="Şifre">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Şifre Tekrar</label>
+                    <input type="password" asp-for="ConfirmPassword" class="form-control" id="sifre" placeholder="Şifre Tekrar">
+                </div>
+                <div class="form-group">
+                    <label for="exampleSelectGender">Cinsiyet</label>
+                    <select class="form-control" id="exampleSelectGender">
+                        <option>Erkek</option>
+                        <option>Kadın</option>
+                    </select>
+                </div>
+                @* <div class="form-group">
+                    <label>Fotoğraf</label> 
+                    <br />
+                  
+                    <input type="file" asp-for="Picture">
+
+                </div> *@
+
+                <div class="form-group">
+                    <label for="picture">Fotoğraf</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="picture" asp-for="Picture">
+                        <label class="custom-file-label" for="picture">Dosya seçin...</label>
+                    </div>
+                </div>
+
+
+
+                <button type="submit" class="btn btn-primary mr-2">Değişiklikleri Kaydet</button>
+                <button class="btn btn-light">İptal</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

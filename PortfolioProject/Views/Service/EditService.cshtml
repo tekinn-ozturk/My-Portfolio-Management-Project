@@ -1,0 +1,39 @@
+﻿@using EntityLayer.Concrete
+@model Service
+@{
+    ViewData["Title"] = "EditService";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<style>
+    .middle {
+        display: block;
+        text-align: left;
+        margin-left: 255px;
+    }
+</style>
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body text-center">
+            <h4 class="card-title text-center">Hizmet Düzenleme Sayfası</h4>
+            <form asp-controller="Service" asp-action="EditService" class="form-group" method="post">
+                <br />
+
+                @* hidden olarak id eklenmezse güncelleme yapılmıyor. Direkt add işlemi yapılıyor.  *@
+                <input class="form-control col-8 mx-auto" type="hidden" name="ServiceId" asp-for="ServiceId" />
+                <label class="middle">Hizmet Başlığı</label>
+                <input class="form-control col-8 mx-auto" type="text" name="Title" asp-for="Title" />
+                <br />
+                <label class="middle">Görsel</label>
+                <input class="form-control col-8 mx-auto" type="text" name="ImageUrl" asp-for="ImageUrl" />
+                <br />
+
+
+                <button type="submit" class="btn btn-primary">Güncellemeyi Kaydet</button>
+
+
+            </form>
+
+        </div>
+    </div>
+</div>
+

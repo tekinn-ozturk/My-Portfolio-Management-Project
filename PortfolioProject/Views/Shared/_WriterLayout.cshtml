@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<partial name="/Areas/Writer/Views/Default/_HeadPartial.cshtml"></partial>
+    @* Area içinde bulunduğu için _Partial yapıları mutlak suretle tam yolunu vermelisin. *@
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+        <partial name="/Areas/Writer/Views/Default/_NavbarPartial.cshtml"></partial>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_settings-panel.html -->
+      
+      
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+            <partial name="/Areas/Writer/Views/Default/_SidebarPartial.cshtml"></partial>
+            <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class=""> 
+            @* class="row" *@
+              @RenderBody()
+           
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+                <partial name="/Areas/Writer/Views/Default/_FooterPartial.cshtml"></partial>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+    <partial name="/Areas/Writer/Views/Default/_ScriptPartial.cshtml"></partial>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+

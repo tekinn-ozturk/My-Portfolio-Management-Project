@@ -1,0 +1,12 @@
+﻿Admin Klasörü Views'in içinde ve görünüm dosyası.
+Admin layout gibi birşey tasarladık.
+Her ekleme-silme-güncelleme sayfalarında bu partiallar yer alacak!
+
+PartialHead=> Template'in Head'i
+PartialNavbar=> NavBar
+PartialSideBar=>SideBar
+
+NavigationPartial => Yönlendirici bölümü yani şey Deneyimler Listesi / Deneyimler / Deneyim Listesi gibi bir bölüm varya orası.
+
+PartialFooter => Footer
+PArtialScript=>

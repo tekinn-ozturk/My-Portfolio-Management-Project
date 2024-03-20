@@ -1,0 +1,56 @@
+﻿@using EntityLayer.Concrete
+@model WriterMessage
+@{
+    ViewData["Title"] = "AdminMessageDetail";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<style>
+    input {
+        background-color: #2A3038; 
+    }
+</style>
+<form class="form-group" asp-area="Writer" asp-controller="Message" asp-action="MessageDetails">
+    <h3>Mesaj Detayları</h3>
+    <br />
+
+    <div>
+        <label><strong>Gönderici Adı</strong></label>
+        @{
+
+            for (int i = 0; i < 129; i++)
+            {
+                <text>&nbsp;</text>
+
+            }
+        }
+
+        <label style=""><strong>Alıcı Adı</strong></label>
+    </div>
+
+    <div>
+
+        <input type="text" asp-for="SenderName" class="form-control col-4" readonly style="display:inline; background-color: #2A3038;" />
+
+
+        <input type="text" asp-for="ReceiverName" class="form-control col-4" readonly style="display:inline; background-color: #2A3038;" />
+    </div>
+
+
+    <br />
+
+    <div class="mb-3">
+        <label><strong>Başlık</strong></label>
+        <input type="text" asp-for="Subject" class="form-control col-md-8" readonly style="background-color: #2A3038;" />
+    </div>
+    <br />
+
+    <div class="mb-3">
+        <label><strong>İçerik</strong></label>
+        <textarea rows="10" asp-for="MessageContent" class="form-control col-md-8" readonly style="background-color: #2A3038;"></textarea>
+    </div>
+
+
+    <input type="hidden" asp-for="Id" class="form-control col-4 "   style="display:inline"  />
+
+</form>
+

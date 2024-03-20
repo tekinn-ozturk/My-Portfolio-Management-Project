@@ -1,0 +1,30 @@
+﻿@using EntityLayer.Concrete
+@model Announcement
+@{
+    ViewData["Title"] = "AnnouncementDetails";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+
+<style>
+    h3{
+        color: #5F9EA0;
+        
+    }
+</style>
+
+<form class="form-group" asp-area="Writer" asp-controller="Default" asp-action="AnnouncementDetails">
+    <h3>Duyuru Detayları</h3>
+    <br />
+    <div class="mb-3">
+        <label><strong>Başlık</strong></label>
+    <input type="text" asp-for="Title" class="form-control col-md-8" readonly />
+    </div>
+    <br />
+
+
+    <div class="mb-3">
+        <label><strong>İçerik</strong></label>
+        <textarea rows="10"  asp-for="Content" class="form-control col-md-8" readonly></textarea>
+    </div>
+    
+</form>

@@ -1,0 +1,60 @@
+﻿@using EntityLayer.Concrete
+@model WriterMessage
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "~/Views/Shared/_WriterLayout.cshtml";
+}
+<form class="form-group" asp-area="Writer" asp-controller="Message" asp-action="MessageDetails">
+    <h3>Mesaj Detayları</h3>
+    <br />
+
+    @* <div>
+        <label><strong>Gönderici Adı</strong></label>
+        @{
+
+            for (int i = 0; i < 50; i++)
+            {
+                <text>&nbsp;</text>
+               
+            }
+        }
+
+        <label style=""><strong>Alıcı Adı</strong></label>
+    </div>
+
+    <div>
+
+        <input type="text" asp-for="SenderName" class="form-control col-4" readonly style="display:inline" />
+
+
+        <input type="text" asp-for="ReceiverName" class="form-control col-4" readonly style="display:inline" />
+    </div> *@
+    <div style="display: flex; justify-content:flex-start; gap:10px">
+        <div style="width: 30%;">
+            <label><strong>Gönderici Adı</strong></label>
+            <input type="text" class="form-control " asp-for="SenderName" readonly>
+        </div>
+        <div style="width: 38%; padding-right:20px">
+            <label><strong>Alıcı Adı</strong></label>
+            <input type="text" class="form-control" asp-for="ReceiverName" readonly>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="mb-3">
+        <label><strong>Başlık</strong></label>
+        <input type="text" asp-for="Subject" class="form-control col-md-8" readonly />
+    </div>
+    <br />
+
+    <div class="mb-3">
+        <label><strong>İçerik</strong></label>
+        <textarea rows="10" asp-for="MessageContent" class="form-control col-md-8" readonly></textarea>
+    </div>
+
+
+    <input type="hidden" asp-for="Id" class="form-control col-4" readonly style="display:inline" />
+
+</form>
+

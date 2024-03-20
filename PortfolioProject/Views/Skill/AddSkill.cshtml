@@ -1,0 +1,23 @@
+﻿@* name attribute'i ile eşlemeyi yapabiliyoruz *@
+@{
+    ViewData["Title"] = "AddSkill";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<div class="card-header border-0">
+    <h3 class="mb-0">Yetenek Ekleme Ekranı</h3>
+</div>
+<form class="form-group" method="post">
+    <br />
+   
+    
+    <label >Yetenek Başlığı</label>
+    <input class="form-control" type="text" name="Title" />
+    <br />
+    <label>Değer</label>
+    <input class="form-control" type="text" name="Value" />
+    <br />
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+
+
+</form>
+

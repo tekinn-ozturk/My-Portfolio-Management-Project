@@ -1,0 +1,98 @@
+﻿@using EntityLayer.Concrete
+@model About
+@{
+    ViewData["Title"] = "Index";
+    //Burada daha önce eski Layout'um vardı(Argon) bunu buradan direkt değiştirebilirim.
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+           
+
+            <form class="forms-sample" method="post">
+
+                <div class="form-group">
+                    <h3>Hakkımda Düzenleme Sayfası</h3>
+                    <input type="hidden" class="form-control" id="exampleInputName1" placeholder="Id" asp-for="AboutId">
+                </div>
+               
+                <div class="form-group">
+                    <label for="exampleInputName1">Başlık</label>
+                    <input type="text" class="form-control" id="exampleInputName1" placeholder="Title" asp-for="Title">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputEmail3">Açıklama</label>
+                    <textarea class="form-control" id="exampleInputEmail3" placeholder="Açıklama" cols="5" rows="5" asp-for="Description"></textarea>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Yaş</label>
+                    <input type="text" class="form-control" id="exampleInputPassword4" asp-for="Age" placeholder="Yaş">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleTextarea1">E-Posta</label>
+                    <input class="form-control" id="exampleTextarea1" rows="4" asp-for="Mail"/>
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Telefon Numarası</label>
+                    <input type="text" class="form-control" id="exampleInputPassword4" asp-for="Phone" placeholder="Phone Number">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Adres</label>
+                    <input type="text" class="form-control" id="exampleInputPassword4" asp-for="Address" placeholder="Adres">
+                </div>
+                <br />
+                <div class="form-group">
+                    <label for="exampleInputPassword4">Görsel Yolu</label>
+                    <input type="text" class="form-control" id="exampleInputPassword4" asp-for="ImageUrl" placeholder="Görsel Yolu">
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary mr-2">Güncellemeyi Kaydet</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+@* <div class="card-header border-0">
+    <h3 class="mb-0">Hakkımda Düzenleme Sayfası</h3>
+</div>
+<form class="form-group" asp-controller="About" asp-action="Index" method="post">
+    <br />
+
+    <input class="form-control" type="hidden" name="AboutId" asp-for="AboutId" />
+    <label>Başlık</label>
+    <input class="form-control" type="text" name="Title" asp-for="Title" />
+    <br />
+    <label>Açıklama</label>
+    
+    <textarea class="form-control" rows="7" cols="5" name="Description" asp-for="Description"></textarea>
+    <br />
+    <label>Yaş</label>
+    <input class="form-control" type="text" name="Age" asp-for="Age" />
+    <br />
+    <label>E-Posta</label>
+    <input class="form-control" type="text" name="Mail" asp-for="Mail" />
+    <br />
+    <label>Telefon Numarası</label>
+    <input class="form-control" type="text" name="Phone" asp-for="Phone" />
+    <br />
+    <label>Adres</label>
+    <input class="form-control" type="text" name="Address" asp-for="Address" />
+    <br/>
+    <label>Fotoğraf</label>
+    <input class="form-control" type="text" name="ImageUrl" asp-for="ImageUrl" />
+    <br />
+
+    
+
+    <button type="submit" class="btn btn-primary">Güncellemeyi Kaydet</button>
+
+
+</form> *@
+
