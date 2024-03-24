@@ -1,0 +1,55 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterAppUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+@* Scriptlerimin çalışması içinJquery kütüphanesi bağlantısı *@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<div class="col-md-6">
+    <div class="p-2">
+        <button type="button" id="btnGetListAll" class="btn btn-outline-primary">Verileri Getir</button>
+        <button type="button" id="btnAddUser" class="btn btn-outline-info">Veri Ekle</button>
+    </div>
+</div>
+
+<h4 class="text-center">Yazar Listesi</h4>
+<div class="p-2" id="listUser">
+    buraya veriler gelecek.
+</div>
+<br/>
+@* yaptığınız JavaScript kodunda AJAX isteği gönderirken asp-for kullanmak yerine, doğrudan URL belirtmişsiniz: url: "/WriterUser/ListUser/". Bu durumda asp-for gibi bir tag helper kullanmanıza gerek yoktur çünkü AJAX isteğinin hedefi doğrudan belirtilmiştir. *@
+<div class="col-md-12">
+    <input type="text" class="form-control" id="inpName" placeholder="Ad"/>
+    <br/>
+    <input type="text" class="form-control" id="inpSurname" placeholder="Soyad"/>
+    <br />
+    <input type="text" class="form-control" id="inpUsername" placeholder="Kullanıcı Adı" />
+    <br />
+    <input type="text" class="form-control" id="inpMail" placeholder="E-Mail" />
+</div>
+
+
+@* script yazmak için bu şekilde script taglerinin içinde genellikle sayfa sonunda yazılır.(JavaScript kodları, AJAX,jQuery ...) *@
+<script>
+
+    //butona seslendik ve click olduğunda bir fonksiyon çalışmasını sağladık.
+    $("#btnGetListAll").click(function () {
+        //fonksiyonun tanımlaması yapıldı.
+        $.ajax({
+            contentType: "application/json",
+            dataType: "json",
+            type: "Get",
+            url: "/WriterUser/ListUser/",
+
+            //fonksiyon başarılı bir şekilde çalışırsa aşağıdaki işlem gerçekleşir.
+            success: function (funk) {
+                let users = jQuery.parseJSON(funk);
+                console.log(users);
+            }
+        });
+    });
+</script>
+

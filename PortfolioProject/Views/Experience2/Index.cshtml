@@ -1,0 +1,107 @@
+﻿@using EntityLayer.Concrete
+@model List<Experience>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@* <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> *@
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+
+<div class="col-md-6">
+    <div class="p-2">
+        <button type="button" id="btnGetListAll" class="btn btn-outline-primary">Verileri Getir</button>
+        <button type="button" id="btnAdd" class="btn btn-outline-info">Veri Ekle</button>
+    </div>
+</div>
+
+
+
+<div class="p-2" id="listExperience">
+</div>
+<br />
+
+ @* hiç bir property'miz null geçilebilir değil bu sebeple hepsine girdi yapalımki database veri olarak kabul etsin.  *@
+<div class="col-md-12" style="display: none;" id="addExperienceForm">
+    <input type="text" class="form-control" id="inpName" placeholder="Başlık" />
+    <br />
+    <input type="text" class="form-control" id="inpDate" placeholder="Tarih" />
+    <br />
+    <input type="text" class="form-control" id="inpImageUrl" placeholder="Görsel Yolu" />
+    <br />
+    <input type="text" class="form-control" id="inpDescription" placeholder="Açıklama" />
+    <br/>
+    <button type="button" id="btnSaveExperience" class="btn btn-success">Kaydet</button>
+</div>
+
+
+
+
+<script>
+    
+    //butona seslendik ve click olduğunda bir fonksiyon çalışmasını sağladık.
+    $("#btnGetListAll").click(function () {
+        //fonksiyonun tanımlaması yapıldı.
+        $.ajax({
+            contentType: "application/json",
+            dataType: "json",
+            type: "Get",
+            url: "/Experience2/ListExperience/",
+
+            //fonksiyon başarılı bir şekilde çalışırsa aşağıdaki işlem gerçekleşir.
+            success: function (funk) {
+                let values = jQuery.parseJSON(funk);
+                console.log(values);
+
+                //tablo baş kısmını oluşturduk ve tablonun bitişini yapmadım farkedersen;
+                let htmlst = "<table class=table table-bordered id=listExperience style=display: none;> <tr> <th> # </th>  <th> Başlık </th>  <th> Tarih </th> </tr>";
+
+                //tablonun gövdesini doldurmayı bu şekilde sağladık.
+                //values dizisindeki her bir öğe için belirtilen işlemi gerçekleştirir yani values dizisinde kaç tane eleman varsa o kadar tr açıyoruz.
+                $.each(values, (index, value) => {
+                    htmlst += `<tr> <td>${value.ExperienceId}</td> <td>${value.Name}</td> <td>${value.Date}</td> </tr>`
+                });
+
+                //tablonun kapanışını verdik.
+                htmlst += "</table>";
+
+                //ilgili div elementine bu htmlst değişkeninin html formatında bastırılmasını sağladık.
+                $("#listExperience").html(htmlst);
+
+            }
+        });
+    });
+    // btnAdd'e her click yapıldığında addExperienceForm açılıp kapanacak.
+    $("#btnAdd").click(function () {
+        $("#addExperienceForm").toggle(); // Formun görünürlüğünü değiştir (gizle/göster).[inputların display'i style'ı inline olarak verildi.]
+    });
+    $("#btnGetListAll").click(function () {
+        $("#listExperience").toggle(); // Tablonun görünürlüğünü değiştir (gizle/göster).[tabloların display style'ı inline olarak verildi.]
+    });
+    $("#btnSaveExperience").click(function () {
+        let values = {
+            Name: $("#inpName").val(),
+            Date: $("#inpDate").val(),
+            ImageUrl: $("#inpImageUrl").val(),
+            Description: $("#inpDescription").val()
+            
+            
+            
+            
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "/Experience2/AddExperience/",
+            data: values,
+           
+            success: function (funk1) {
+                let result = jQuery.parseJSON(funk1);
+                alert(" Başarılı bir şekilde eklendi")
+            }
+          
+
+        });
+    });
+</script>

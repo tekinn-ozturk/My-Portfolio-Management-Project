@@ -7,9 +7,9 @@ C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLa
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.sourcelink.json
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.genruntimeconfig.cache
 C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll
-C:\Users\PC\Desktop\Portfolio-Core-Project\EntityLayer\obj\Debug\net6.0\EntityLayer.sourcelink.json

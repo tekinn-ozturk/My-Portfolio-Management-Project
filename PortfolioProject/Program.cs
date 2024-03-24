@@ -60,6 +60,8 @@ namespace PortfolioProject
             builder.Services.AddTransient<ITestimonialRepository, EFTestimonialRepository>();
             builder.Services.AddTransient<IContactRepository, EFContactRepository>();
             builder.Services.AddTransient<ISocialMediaRepository, EFSocialMediaRepository>();
+            builder.Services.AddTransient<IWriterUserRepository, EFWriterUserRepository>();
+            builder.Services.AddTransient<IExperienceRepository, EFExperienceRepository>();
 
 
             //Manager
@@ -73,6 +75,8 @@ namespace PortfolioProject
             builder.Services.AddTransient<ITestimonialService, TestimonialManager>();
             builder.Services.AddTransient<IContactService, ContactManager>();
             builder.Services.AddTransient<ISocialMediaService, SocialMediaManager>();
+            builder.Services.AddTransient<IWriterUserService, WriterUserManager>();
+            builder.Services.AddTransient<IExperienceService, ExperienceManager>();
 
 
             var app = builder.Build();
