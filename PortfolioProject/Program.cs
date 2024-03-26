@@ -8,6 +8,7 @@ using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
+using PortfolioProject.Controllers;
 
 namespace PortfolioProject
 {
@@ -89,6 +90,7 @@ namespace PortfolioProject
                 app.UseHsts();
             }
 
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404/");
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseAuthentication();
