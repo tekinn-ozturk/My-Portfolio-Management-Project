@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|c:\\users\\pc\\desktop\\portfolio-core-project\\portfolioproject\\views\\experience2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|solutionrelative:portfolioproject\\views\\experience2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|c:\\users\\pc\\desktop\\portfolio-core-project\\portfolioproject\\controllers\\experience2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|solutionrelative:portfolioproject\\controllers\\experience2controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|c:\\users\\pc\\desktop\\portfolio-core-project\\portfolioproject\\views\\experience2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{050794A2-55C2-463C-8D5B-C9CC326ECD1C}|PortfolioProject\\PortfolioProject.csproj|solutionrelative:portfolioproject\\views\\experience2\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,28 +30,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\Views\\Experience2\\Index.cshtml",
               "RelativeDocumentMoniker": "PortfolioProject\\Views\\Experience2\\Index.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\Views\\Experience2\\Index.cshtml",
               "RelativeToolTip": "PortfolioProject\\Views\\Experience2\\Index.cshtml",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEoAAABKAAAA",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAIwPgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-03-24T13:03:49.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Experience2Controller.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\Controllers\\Experience2Controller.cs",
               "RelativeDocumentMoniker": "PortfolioProject\\Controllers\\Experience2Controller.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\Controllers\\Experience2Controller.cs",
               "RelativeToolTip": "PortfolioProject\\Controllers\\Experience2Controller.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAUwBgAAAAbAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAswD0AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-24T12:59:55.385Z"
+              "WhenOpened": "2024-03-24T12:59:55.385Z",
+              "EditorCaption": ""
             }
           ]
         }
