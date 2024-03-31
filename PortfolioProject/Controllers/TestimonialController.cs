@@ -19,6 +19,17 @@ namespace PortfolioProject.Controllers
             return View(values);
         }
 
+        public IActionResult AddTestimonial()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddTestimonial(Testimonial testimonial)
+        {
+            _testimonialService.TAdd(testimonial);
+            return RedirectToAction("Index");
+        }
+
         public IActionResult DeleteTestimonial(int id)
         {
             var values = _testimonialService.TGetById(id);

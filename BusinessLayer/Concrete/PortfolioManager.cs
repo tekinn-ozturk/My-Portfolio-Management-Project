@@ -46,6 +46,8 @@ namespace BusinessLayer.Concrete
         public void TUpdate(Portfolio t)
         {
             _portfolioRepository.Update(t);
+            
         }
+       
     }
 }

@@ -71,7 +71,7 @@ namespace APILayer.Controllers
            var values = c.Categories.FirstOrDefault(x=>x.CategoryId==p.CategoryId);
             values.CategoryName=p.CategoryName;
             values.CategoryId=p.CategoryId;
-
+            c.Update(values);
             c.SaveChanges();
             return Ok();
 

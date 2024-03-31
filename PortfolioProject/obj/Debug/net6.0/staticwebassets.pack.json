@@ -23277,10 +23277,6 @@
       "PackagePath": "staticwebassets\\skydash\\vendors\\x-editable\\bootstrap-editable.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\wwwroot\\user-img\\07180aec-11c3-453c-a93f-f82486fce0a0.jpg",
-      "PackagePath": "staticwebassets\\user-img\\07180aec-11c3-453c-a93f-f82486fce0a0.jpg"
-    },
-    {
       "Id": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\wwwroot\\user-img\\25b6d40c-3c8a-4ff1-9079-19b50693177a.jpg",
       "PackagePath": "staticwebassets\\user-img\\25b6d40c-3c8a-4ff1-9079-19b50693177a.jpg"
     },
@@ -23295,6 +23291,10 @@
     {
       "Id": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\wwwroot\\user-img\\9d9e97b9-69f4-4dba-bfce-2f1c495b55da.jpg",
       "PackagePath": "staticwebassets\\user-img\\9d9e97b9-69f4-4dba-bfce-2f1c495b55da.jpg"
+    },
+    {
+      "Id": "C:\\Users\\PC\\Desktop\\Portfolio-Core-Project\\PortfolioProject\\wwwroot\\user-img\\d3a503c9-3283-47e9-a813-637f7157cb51.png",
+      "PackagePath": "staticwebassets\\user-img\\d3a503c9-3283-47e9-a813-637f7157cb51.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PortfolioProject.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,7 +1,7 @@
-﻿@* @using EntityLayer.Concrete
+﻿@using EntityLayer.Concrete
 
-@model List<UserMessage> *@
-@* <div class="col-md-6 col-xl-4 grid-margin stretch-card">
+@model List<Message> 
+<div class="col-md-6 col-xl-4 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
             <div class="d-flex flex-row justify-content-between">
@@ -14,7 +14,7 @@
                 <div class="preview-list">
                     <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                            <img src="@item.User.ImageUrl" alt="image" class="rounded-circle" />
+                            <img src="" alt="image" class="rounded-circle" />
                         </div>
 
 
@@ -22,8 +22,8 @@
                         <div class="preview-item-content d-flex flex-grow">
                             <div class="flex-grow">
                                 <div class="d-flex d-md-block d-xl-flex justify-content-between">
-                                    <h6 class="preview-subject">@item.User.Name @item.User.Surname</h6>
-                                    <p class="text-muted text-small">@item.Date.ToShortDateString().ToString()</p>
+                                    <h6 class="preview-subject">@item.Name</h6>
+                                    <p class="text-muted text-small"></p>
                                 </div>
                                 <p class="text-muted">@item.Content.Substring(0,30). . . .</p>
                             </div>
@@ -37,4 +37,4 @@
 
         </div>
     </div>
-</div> *@
+</div>

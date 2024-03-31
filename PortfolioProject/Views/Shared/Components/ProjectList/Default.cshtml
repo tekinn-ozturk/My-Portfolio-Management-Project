@@ -19,6 +19,8 @@
 
                                 <th> Tamamlanma</th>
                                 <th> Durum </th>
+                                <th> Detay </th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -48,6 +50,8 @@
                                             <div class="badge badge-outline-warning">Devam Ediyor</div>
                                         }
                                     </td>
+
+                                    <td> <a type="submit" class="btn btn-outline-secondary" asp-controller="Portfolio" asp-action="EditPortfolio" asp-route-id="@item.PortfolioId">Detay İncele</a></td>
                                 </tr>
 
 

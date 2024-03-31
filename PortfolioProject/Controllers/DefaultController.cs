@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PortfolioProject.Controllers
 {
+	[AllowAnonymous]
 	public class DefaultController : Controller
 	{
         
