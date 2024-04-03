@@ -1,4 +1,4 @@
-Admin, Kullanıcı ve karşılama sayfası olarak 3 panelden oluşuyor. Temel amacı kişisel bir portföy sitesi olmakla birlikte,
+Bu proje Admin, Kullanıcı ve karşılama sayfası olarak 3 panelden oluşuyor. Temel amacı kişisel bir portföy sitesi olmakla birlikte,
 ziyaretçilerin kayıt olduktan sonra site içerisinde çeşitli özellikleri kullanabilmelerini sağlar. Örneğin, mesaj gönderebilir ve çeşitli taleplerde bulunabilirler. Ayrıca, Admin geniş bir yönetim yetkisiyle siteye hakimiyet sağlar.
 
 Kullanılan Teknolojiler 💻 
